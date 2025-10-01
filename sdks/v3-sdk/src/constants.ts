@@ -10,9 +10,6 @@ export const POOL_INIT_CODE_HASH = '0xe34f199b19b2b4f47f68442619d555527d244f78a3
 export function poolInitCodeHash(chainId?: ChainId): string {
   switch (chainId) {
     case ChainId.ZKSYNC:
-    case ChainId.ABSTRACT_TESTNET:
-    case ChainId.ZERO:
-    case ChainId.ABSTRACT_MAINNET:
       return '0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed'
     default:
       return POOL_INIT_CODE_HASH

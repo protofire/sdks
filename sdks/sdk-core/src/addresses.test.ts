@@ -42,5 +42,10 @@ describe('addresses', () => {
       const address = SWAP_ROUTER_02_ADDRESSES(ChainId.BLAST)
       expect(address).toEqual('0x549FEB8c9bd4c12Ad2AB27022dA12492aC452B66')
     })
+
+    it('should return the correct address for flow testnet', () => {
+      const address = SWAP_ROUTER_02_ADDRESSES(ChainId.FLOW_TESTNET)
+      expect(address).toEqual('0x2Db6468229F6fB1a77d248Dbb1c386760C257804')
+    })
   })
 })

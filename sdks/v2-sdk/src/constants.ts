@@ -13,11 +13,6 @@ export const INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbe
 
 export function pairInitCodeHash(chainId?: ChainId): string {
   switch (chainId) {
-    case ChainId.ABSTRACT_TESTNET:
-    case ChainId.ABSTRACT_MAINNET:
-      return '0x0100065f2f2a556816a482652f101ddda2947216a5720dd91a79c61709cbf2b8'
-    case ChainId.ZERO:
-      return '0x010005279097a5c2093daa79c75905339804c21bc53dc3391ea5440ae1191045'
     default:
       return INIT_CODE_HASH
   }

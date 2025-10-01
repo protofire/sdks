@@ -35,6 +35,7 @@ export enum ChainId {
   ANIME = 69000,
   ANIME_TESTNET = 6900,
   MODE = 34443,
+  FLOW_TESTNET = 545,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -72,6 +73,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.ANIME,
   ChainId.ANIME_TESTNET,
   ChainId.MODE,
+  ChainId.FLOW_TESTNET,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -87,4 +89,5 @@ export enum NativeCurrencyName {
   ROOTSTOCK = 'RBTC',
   ANIME = 'ANIME',
   ANIME_TESTNET = 'ANIME',
+  FLOW_TESTNET = 'FLOW',
 }
