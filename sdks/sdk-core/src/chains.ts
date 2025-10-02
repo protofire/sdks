@@ -24,6 +24,7 @@ export enum ChainId {
   BLAST = 81457,
   ZKSYNC = 324,
   FLOW_TESTNET = 545,
+  FLOW_MAINNET = 747,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -50,6 +51,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.BLAST,
   ChainId.ZKSYNC,
   ChainId.FLOW_TESTNET,
+  ChainId.FLOW_MAINNET,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 

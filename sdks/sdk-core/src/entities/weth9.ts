@@ -25,4 +25,5 @@ export const WETH9: { [chainId: number]: Token } = {
   43114: new Token(43114, '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7', 18, 'WAVAX', 'Wrapped AVAX'),
   324: new Token(324, '0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91', 18, 'WETH', 'Wrapped Ether'),
   545: new Token(545, '0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e', 18, 'WFLOW', 'Wrapped FLOW'),
+  747: new Token(747, '0xd3bf53dac106a0290b0483ecbc89d40fcc961f3e', 18, 'WFLOW', 'Wrapped Flow'),
 }

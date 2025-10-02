@@ -175,6 +175,12 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e',
     creationBlock: 70212802,
   },
+  // flow mainnet
+  [747]: {
+    router: '0x7087d5ae7F8A920F9a84BD760383c00D4B0Eb0Dd',
+    weth: '0xd3bf53dac106a0290b0483ecbc89d40fcc961f3e',
+    creationBlock: 42146649,
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {
