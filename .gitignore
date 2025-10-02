@@ -11,3 +11,5 @@ node_modules
 
 # Intellij IDEA artifacts
 .idea/
+AGENTS.md
+TASK.md
