@@ -47,5 +47,10 @@ describe('addresses', () => {
       const address = SWAP_ROUTER_02_ADDRESSES(ChainId.FLOW_TESTNET)
       expect(address).toEqual('0x2Db6468229F6fB1a77d248Dbb1c386760C257804')
     })
+
+    it('should return the correct address for flow-mainnet', () => {
+      const address = SWAP_ROUTER_02_ADDRESSES(ChainId.FLOW_MAINNET)
+      expect(address).toEqual('0xeEDC6Ff75e1b10B903D9013c358e446a73d35341')
+    })
   })
 })
