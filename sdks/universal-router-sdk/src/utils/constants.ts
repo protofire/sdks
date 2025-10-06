@@ -177,9 +177,9 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
   },
   // flow mainnet
   [747]: {
-    router: '0x7087d5ae7F8A920F9a84BD760383c00D4B0Eb0Dd',
+    router: '0x5fE87847fe20a6C30921620F52B06a4A3740aa61',
     weth: '0xd3bf53dac106a0290b0483ecbc89d40fcc961f3e',
-    creationBlock: 42146649,
+    creationBlock: 42574667,
   },
 }
 
