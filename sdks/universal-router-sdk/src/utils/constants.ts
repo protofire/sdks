@@ -215,6 +215,20 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
+  // base sepolia
+  [84532]: {
+    weth: '0x4200000000000000000000000000000000000006',
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0xCEe7e570DE04feB7ce309bb417c2dA7d5F0D130F',
+        creationBlock: 32988465,
+      },
+      [UniversalRouterVersion.V2_0]: {
+        address: '0xCEe7e570DE04feB7ce309bb417c2dA7d5F0D130F',
+        creationBlock: 32988465,
+      },
+    },
+  },
   // base mainnet
   [8453]: {
     weth: '0x4200000000000000000000000000000000000006',

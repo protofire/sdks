@@ -17,6 +17,7 @@ export enum ChainId {
   BNB = 56,
   AVALANCHE = 43114,
   BASE_GOERLI = 84531,
+  BASE_SEPOLIA = 84532,
   BASE = 8453,
   ZORA = 7777777,
   ZORA_SEPOLIA = 999999999,
@@ -57,6 +58,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.AVALANCHE,
   ChainId.BASE,
   ChainId.BASE_GOERLI,
+  ChainId.BASE_SEPOLIA,
   ChainId.ZORA,
   ChainId.ZORA_SEPOLIA,
   ChainId.ROOTSTOCK,
@@ -93,4 +95,5 @@ export enum NativeCurrencyName {
   ANIME_TESTNET = 'ANIME',
   FLOW_TESTNET = 'FLOW',
   FLOW_MAINNET = 'FLOW',
+  BASE_SEPOLIA = 'ETH',
 }
