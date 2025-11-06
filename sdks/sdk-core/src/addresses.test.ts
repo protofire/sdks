@@ -13,6 +13,11 @@ describe('addresses', () => {
       expect(address).toEqual('0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d')
     })
 
+    it('should return the correct address for base-sepolia', () => {
+      const address = SWAP_ROUTER_02_ADDRESSES(ChainId.BASE_SEPOLIA)
+      expect(address).toEqual('0x254c88FB114E3C912A8fC6883a08190E8Ba46208')
+    })
+
     it('should return the correct address for avalanche', () => {
       const address = SWAP_ROUTER_02_ADDRESSES(ChainId.AVALANCHE)
       expect(address).toEqual('0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE')
