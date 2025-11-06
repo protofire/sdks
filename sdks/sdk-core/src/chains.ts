@@ -18,6 +18,7 @@ export enum ChainId {
   AVALANCHE = 43114,
   BASE_GOERLI = 84531,
   BASE = 8453,
+  BASE_SEPOLIA = 84532,
   ZORA = 7777777,
   ZORA_SEPOLIA = 999999999,
   ROOTSTOCK = 30,
@@ -45,6 +46,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.AVALANCHE,
   ChainId.BASE,
   ChainId.BASE_GOERLI,
+  ChainId.BASE_SEPOLIA,
   ChainId.ZORA,
   ChainId.ZORA_SEPOLIA,
   ChainId.ROOTSTOCK,
@@ -66,4 +68,5 @@ export enum NativeCurrencyName {
   AVAX = 'AVAX',
   ROOTSTOCK = 'RBTC',
   FLOW = 'FLOW',
+  BASE_SEPOLIA = 'ETH',
 }

@@ -99,6 +99,12 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0x4200000000000000000000000000000000000006',
     creationBlock: 9107268,
   },
+  // base sepolia
+  [84532]: {
+    router: '0x1f19E945F95d61561cE5EA55b9ACdAf0e9464F56',
+    weth: '0x4200000000000000000000000000000000000006',
+    creationBlock: 33344366,
+  },
   [81457]: {
     router: '0x643770E279d5D0733F21d6DC03A8efbABf3255B4',
     weth: '0x4300000000000000000000000000000000000004',
