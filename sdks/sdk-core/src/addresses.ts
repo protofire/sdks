@@ -396,7 +396,7 @@ const STABLE_TESTNET_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x07fA0d3cc760097dAbA30192B6A52eD6990CCa0f',
   nonfungiblePositionManagerAddress: '0xF1927d16C1dC5f9997119DD56539D56184f71a6c',
   tickLensAddress: '0x11e394C0B1fc95A05e43679605A302d076AF4458',
-  swapRouter02Address: '0x822b29B7f881F0b40c7fEe16dC7754940940b8f0',
+  swapRouter02Address: '0x42657399bD6ACcd22f67568AAf7Bf523c0271737',
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
