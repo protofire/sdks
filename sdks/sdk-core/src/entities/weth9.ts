@@ -36,4 +36,5 @@ export const WETH9: { [chainId: number]: Token } = {
   69000: new Token(69000, '0x164906a76f1A2Ea933366c446AE0Ec6a37062c42', 18, 'WANIME', 'Wrapped ANIME'),
   6900: new Token(6900, '0x8f3e2785985aa4005c63f97f7cc89ce91a948267', 18, 'WETH', 'Wrapped Ether'),
   34443: new Token(34443, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
+  2201: new Token(2201, '0x5574c55b7002A900CE7c0f197F5dcc8126bA8501', 18, 'UP', 'Unsupported Protocol'),
 }
