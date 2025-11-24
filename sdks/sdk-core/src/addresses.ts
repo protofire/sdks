@@ -392,7 +392,7 @@ const MODE_ADDRESSES: ChainAddresses = {
 const STABLE_TESTNET_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x2e5F4ccAEF6f4e4bD4fF8B3D754Ff6CB3715e207',
   multicallAddress: '0x3041eB141Bf4091FC55fa5ad0E53a66dc17c058d',
-  quoterAddress: '0x822b29B7f881F0b40c7fEe16dC7754940940b8f0',
+  quoterAddress: '0x8034456f896C0FcC7559D7641BDA4560fEabFBCb',
   v3MigratorAddress: '0x07fA0d3cc760097dAbA30192B6A52eD6990CCa0f',
   nonfungiblePositionManagerAddress: '0xF1927d16C1dC5f9997119DD56539D56184f71a6c',
   tickLensAddress: '0x11e394C0B1fc95A05e43679605A302d076AF4458',
