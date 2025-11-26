@@ -437,10 +437,20 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
+  [988]: {
+    weth: '0x5d442b349590a6048Eb2dC0eC346cAA5F47A9ab5',
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0x5Be52b52f3d1dbC324d2959637471a4208626144',
+        creationBlock: 3443956,
+      },
+      [UniversalRouterVersion.V2_0]: {
+        address: '0x5Be52b52f3d1dbC324d2959637471a4208626144',
+        creationBlock: 3443956,
+      },
+    },
+  },
 }
-
-
-
 
 export const UNIVERSAL_ROUTER_ADDRESS = (version: UniversalRouterVersion, chainId: number): string => {
   if (!(chainId in CHAIN_CONFIGS)) throw new Error(`Universal Router not deployed on chain ${chainId}`)

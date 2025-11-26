@@ -59,6 +59,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.ANIME_TESTNET]: '0x69f2888491eA07BB10936aA110A5E0481122efd3',
   [ChainId.MODE]: '0x79ABbfdf20fc6DD0c51693bF9A481F7351A70Fd2',
   [ChainId.STABLE_TESTNET]: '0x9f6b9ec4cD95C1f825741832683eFdDc0641D88e',
+  [ChainId.STABLE]: '0x25D2d657F539F2bB16eC82773cBE5ee49ddD3c69',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -83,7 +84,8 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.ANIME]: '0xd0c0B893D09A7Ef28819f35943254682c7Ccf388',
   [ChainId.ANIME_TESTNET]: '0x4F9f253Cc262fC82baD2d25BC1Ea7c67544535e3',
   [ChainId.MODE]: '0xCf94f92dbb2E49D311B6cBc0C57EAc4453f6692b',
-  [ChainId.STABLE_TESTNET]: '0xF950fE0113332dAD290674865fd720753B078027'
+  [ChainId.STABLE_TESTNET]: '0xF950fE0113332dAD290674865fd720753B078027',
+  [ChainId.STABLE]: '0xa571dc7c4f2369F1cA24D3a7E8a35c07Ff52bfC0',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -399,6 +401,16 @@ const STABLE_TESTNET_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x42657399bD6ACcd22f67568AAf7Bf523c0271737',
 }
 
+const STABLE_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x88F0a512eF09175D456bc9547f914f48C013E4aA',
+  multicallAddress: '0x208099D6E8a107aD485CD1374A6EC5Abd98c7F11',
+  quoterAddress: '0xb070179E7032CdA868b53e6C1742F80c9e940d1A',
+  v3MigratorAddress: '0x2C5f4275F1a278BF328D56CB9db304e915DE3082',
+  nonfungiblePositionManagerAddress: '0x3BdC3437405f7D801b6036532713fc1F179136a6',
+  tickLensAddress: '0x8dF0D1614aae99352045c62d24d54E72b38111ec',
+  swapRouter02Address: '0x32eaf9B5d5F2CD7361c5012890C943D7de84C22a',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -435,6 +447,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ANIME_TESTNET]: ANIME_TESTNET,
   [ChainId.MODE]: MODE_ADDRESSES,
   [ChainId.STABLE_TESTNET]: STABLE_TESTNET_ADDRESSES,
+  [ChainId.STABLE]: STABLE_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
