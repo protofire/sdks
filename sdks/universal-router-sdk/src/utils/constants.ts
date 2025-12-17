@@ -181,6 +181,12 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0xd3bf53dac106a0290b0483ecbc89d40fcc961f3e',
     creationBlock: 42574667,
   },
+  // zircuit
+  [48900]: {
+    router: '0xda7c91edD6C709fd3782A1607215992553254174',
+    weth: '0x4200000000000000000000000000000000000006',
+    creationBlock: 23026916,
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {
