@@ -52,5 +52,10 @@ describe('addresses', () => {
       const address = SWAP_ROUTER_02_ADDRESSES(ChainId.FLOW_MAINNET)
       expect(address).toEqual('0xeEDC6Ff75e1b10B903D9013c358e446a73d35341')
     })
+
+    it('should return the correct address for zircuit-garfield-testnet', () => {
+      const address = SWAP_ROUTER_02_ADDRESSES(ChainId.ZIRCUIT_GARFIELD_TESTNET)
+      expect(address).toEqual('0x41FfD5260Cd2DbBc66CBe3c76477d88b5634E2e2')
+    })
   })
 })

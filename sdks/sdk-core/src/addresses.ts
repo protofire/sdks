@@ -60,6 +60,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.MODE]: '0x79ABbfdf20fc6DD0c51693bF9A481F7351A70Fd2',
   [ChainId.FLOW_TESTNET]: '0x7d726261FB76B264fc20eA1f19D900D760136566',
   [ChainId.FLOW_MAINNET]: '0x681D1bFE03522e0727730Ba02a05CD3C0a08fa30',
+  [ChainId.ZIRCUIT_GARFIELD_TESTNET]: '0x5BDD8ecaf5707a6D2d2053e9C1DBD858c3473ae9',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -86,6 +87,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.MODE]: '0xCf94f92dbb2E49D311B6cBc0C57EAc4453f6692b',
   [ChainId.FLOW_TESTNET]: '0x524E1291c109BE27FDE48De97cAf0B3c0F02A68f',
   [ChainId.FLOW_MAINNET]: '0x2B30D97457d44dE9fb0329D9a2C1DF6B7ae1401d',
+  [ChainId.ZIRCUIT_GARFIELD_TESTNET]: '0xa9077409fBb819DD27e55ef4896008BC0Ea4b6D4',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -411,6 +413,16 @@ const FLOW_MAINNET_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0xeEDC6Ff75e1b10B903D9013c358e446a73d35341',
 }
 
+const ZIRCUIT_GARFIELD_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xCEe7e570DE04feB7ce309bb417c2dA7d5F0D130F',
+  multicallAddress: '0x64Bb69672d118De04250e84bc719470966C269E7',
+  quoterAddress: '0x7d8C92C335607aCE813E18308F43185C83082745',
+  v3MigratorAddress: '0xd17A73aAcBdc9f97fD0A55cb05f5cc5e2287BE7E',
+  nonfungiblePositionManagerAddress: '0x52EDAdC9b3089b5EAd8753f9Db049fa1be404EA6',
+  tickLensAddress: '0x3D8A1Ddf0E7A94e548a14a47f5A983c4Ef7f2f10',
+  swapRouter02Address: '0x41FfD5260Cd2DbBc66CBe3c76477d88b5634E2e2',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -448,6 +460,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.MODE]: MODE_ADDRESSES,
   [ChainId.FLOW_TESTNET]: FLOW_TESTNET_ADDRESSES,
   [ChainId.FLOW_MAINNET]: FLOW_MAINNET_ADDRESSES,
+  [ChainId.ZIRCUIT_GARFIELD_TESTNET]: ZIRCUIT_GARFIELD_TESTNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

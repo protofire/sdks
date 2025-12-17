@@ -37,6 +37,7 @@ export enum ChainId {
   MODE = 34443,
   FLOW_TESTNET = 545,
   FLOW_MAINNET = 747,
+  ZIRCUIT_GARFIELD_TESTNET = 48898,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -76,6 +77,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.MODE,
   ChainId.FLOW_TESTNET,
   ChainId.FLOW_MAINNET,
+  ChainId.ZIRCUIT_GARFIELD_TESTNET,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -93,4 +95,5 @@ export enum NativeCurrencyName {
   ANIME_TESTNET = 'ANIME',
   FLOW_TESTNET = 'FLOW',
   FLOW_MAINNET = 'FLOW',
+  ZIRCUIT_GARFIELD_TESTNET = 'ETH',
 }
