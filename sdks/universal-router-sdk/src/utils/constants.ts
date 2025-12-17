@@ -181,6 +181,12 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0xd3bf53dac106a0290b0483ecbc89d40fcc961f3e',
     creationBlock: 42574667,
   },
+  // zircuit garfield testnet
+  [48898]: {
+    router: '0x5b40557082e60c20d891fDf208CcA8A0D8d997fF',
+    weth: '0x3b1b14aec3C7617D41C02d622D5312B3209Bfa98',
+    creationBlock: 12824329,
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {

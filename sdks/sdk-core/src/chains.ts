@@ -25,6 +25,7 @@ export enum ChainId {
   ZKSYNC = 324,
   FLOW_TESTNET = 545,
   FLOW_MAINNET = 747,
+  ZIRCUIT_GARFIELD_TESTNET = 48898,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -52,6 +53,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.ZKSYNC,
   ChainId.FLOW_TESTNET,
   ChainId.FLOW_MAINNET,
+  ChainId.ZIRCUIT_GARFIELD_TESTNET,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -66,4 +68,5 @@ export enum NativeCurrencyName {
   AVAX = 'AVAX',
   ROOTSTOCK = 'RBTC',
   FLOW = 'FLOW',
+  ZIRCUIT_GARFIELD_TESTNET = 'ETH',
 }
