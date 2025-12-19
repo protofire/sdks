@@ -415,7 +415,7 @@ const FLOW_MAINNET_ADDRESSES: ChainAddresses = {
 
 const ZIRCUIT_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x256fE012f8787c13282d6ff24bb6f4506bC55258',
-  multicallAddress: '0x894a461f8C982458C2D78DaAcbD6fA09f8810A64F',
+  multicallAddress: '0x894a461f8C982458C2D78dAcbD6fA09f8810A64F',
   quoterAddress: '0x456F7a8986aB4cE7Fa8380d0641Ba97627ae6E03',
   v3MigratorAddress: '0x54d04BB388714CD790da872165514C0D93369a68',
   nonfungiblePositionManagerAddress: '0x5c377356Ed897A20cD29daaE8ceD7A013C2344f0',
