@@ -400,6 +400,21 @@ const MONAD_TESTNET_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x4c4eabd5fb1d1a7234a48692551eaecff8194ca7',
 }
 
+const CYBER_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x6d4Fa32231b57c8Ba5034489F5FFfeb85AB1d708',
+  multicallAddress: '0x80f9A54272ac990Dfb53524dD2D5f85A6b883bf5',
+  quoterAddress: '0xEF0298f5dBc1dF7F5EE02c3ec48F2a261989Cf43',
+  v3MigratorAddress: '0x087164a4710aA7AE17EC66Ce2cBDaC2d9dD894f4',
+  nonfungiblePositionManagerAddress: '0xe3e426C6777F4d641A62b386c50ea619A56D6f93',
+  tickLensAddress: '0x89D8108a5b92C1B4bBe2858c4C85397f1AEC1CfA',
+  swapRouter02Address: '0x38B05F8c0223b66C4a77C8cB8AF6412BCF23E816',
+
+  v4PoolManagerAddress: '0xe209bAe21F1aa9b03772957a69eF37A25599A36f',
+  v4PositionManagerAddress: '0x9d48D01dEccE2aa217B2EBE93F52cd7634f2d459',
+  v4StateView: '0x7D1D85561aF05E037EbbC4e7FC7D681F60dEd47D',
+  v4QuoterAddress: '0x1E4daDAFB1Cb2d7b4DCeb66774006ccFdA642C26',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -428,6 +443,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.UNICHAIN_SEPOLIA]: UNICHAIN_SEPOLIA_ADDRESSES,
   [ChainId.UNICHAIN]: UNICHAIN_ADDRESSES,
   [ChainId.MONAD_TESTNET]: MONAD_TESTNET_ADDRESSES,
+  [ChainId.CYBER_TESTNET]: CYBER_TESTNET_ADDRESSES
 }
 
 /* V3 Contract Addresses */
