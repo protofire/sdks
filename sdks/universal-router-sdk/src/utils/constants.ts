@@ -16,6 +16,11 @@ type ChainConfig = {
   routerConfigs: { [key in UniversalRouterVersion]: RouterConfig }
 }
 
+const ZERO_ROUTER_CONFIG: RouterConfig = {
+  address: '0x0000000000000000000000000000000000000000',
+  creationBlock: 1,
+}
+
 const WETH_NOT_SUPPORTED_ON_CHAIN = '0x0000000000000000000000000000000000000000'
 
 // Todo: Change `CHAIN_CONFIGS` to pull the UR address with v4
@@ -479,6 +484,42 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
         address: '0x0000000000000000000000000000000000000000',
         creationBlock: 1,
       },
+    },
+  },
+  // rootstock
+  [30]: {
+    weth: WETH_NOT_SUPPORTED_ON_CHAIN,
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: ZERO_ROUTER_CONFIG,
+      [UniversalRouterVersion.V2_0]: ZERO_ROUTER_CONFIG,
+      [UniversalRouterVersion.V2_1]: ZERO_ROUTER_CONFIG,
+    },
+  },
+  // flow testnet
+  [545]: {
+    weth: '0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e',
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0xdAae5d3AD3ab2a1c0f410C27F6c6FEa605898F8F',
+        creationBlock: 1,
+      },
+      [UniversalRouterVersion.V2_0]: ZERO_ROUTER_CONFIG,
+      [UniversalRouterVersion.V2_1]: {
+        address: '0xdAae5d3AD3ab2a1c0f410C27F6c6FEa605898F8F',
+        creationBlock: 1,
+      },
+    },
+  },
+  // cyber testnet
+  [111557560]: {
+    weth: '0x4200000000000000000000000000000000000006',
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: ZERO_ROUTER_CONFIG,
+      [UniversalRouterVersion.V2_0]: {
+        address: '0x2D094CE21AE3431909e373207a2fCef4ba8871a9',
+        creationBlock: 6183303,
+      },
+      [UniversalRouterVersion.V2_1]: ZERO_ROUTER_CONFIG,
     },
   },
 }

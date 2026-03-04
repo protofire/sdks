@@ -63,6 +63,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.SONEIUM]: '0x97febbc2adbd5644ba22736e962564b23f5828ce',
   [ChainId.MONAD]: '0x182a927119d56008d921126764bf884221b10f59',
   [ChainId.XLAYER]: '0xdf38f24fe153761634be942f9d859f3dba857e95',
+  [ChainId.FLOW_TESTNET]: '0x7d726261FB76B264fc20eA1f19D900D760136566',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -87,6 +88,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.SONEIUM]: '0x273f68c234fa55b550b40e563c4a488e0d334320',
   [ChainId.MONAD]: '0x4b2ab38dbf28d31d467aa8993f6c2585981d6804',
   [ChainId.XLAYER]: '0x182a927119d56008d921126764bf884221b10f59',
+  [ChainId.FLOW_TESTNET]: '0x524E1291c109BE27FDE48De97cAf0B3c0F02A68f',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -457,6 +459,34 @@ const XLAYER_ADDRESSES: ChainAddresses = {
   v4QuoterAddress: '0x8928074ca1b241d8ec02815881c1af11e8bc5219',
 }
 
+const FLOW_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x92657b195e22b69E4779BBD09Fa3CD46F0CF8e39',
+  multicallAddress: '0x02b9B840CDCEe84510a02cc85f351CAaD41f46CE',
+  quoterAddress: '0xA1e0E4CCACA34a738f03cFB1EAbAb16331FA3E2c',
+  nonfungiblePositionManagerAddress: '0x8b9F96390EC35d5859937c7c5D68Ff6D5CFC312f',
+  tickLensAddress: '0x36D9bDCbA840F5bcb95EE7bD54a86808aef6581F',
+
+  v4PoolManagerAddress: '0x51F37c4F790D05b277A8A4D040c3DFeb2b1DD7Ea',
+  v4PositionManagerAddress: '0x53B19cBEFe6F2537B203655A013A43ce769a06D2',
+  v4StateView: '0xe46D194552abc60F21a9E5A78aD05C99A66810C6',
+  v4QuoterAddress: '0xf3F9236092172653Aa4B7e7D09f0A94Ca8c5c0Aa',
+}
+
+const CYBER_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x6d4Fa32231b57c8Ba5034489F5FFfeb85AB1d708',
+  multicallAddress: '0x80f9A54272ac990Dfb53524dD2D5f85A6b883bf5',
+  quoterAddress: '0xEF0298f5dBc1dF7F5EE02c3ec48F2a261989Cf43',
+  v3MigratorAddress: '0x087164a4710aA7AE17EC66Ce2cBDaC2d9dD894f4',
+  nonfungiblePositionManagerAddress: '0xe3e426C6777F4d641A62b386c50ea619A56D6f93',
+  tickLensAddress: '0x89D8108a5b92C1B4bBe2858c4C85397f1AEC1CfA',
+  swapRouter02Address: '0x38B05F8c0223b66C4a77C8cB8AF6412BCF23E816',
+
+  v4PoolManagerAddress: '0xe209bAe21F1aa9b03772957a69eF37A25599A36f',
+  v4PositionManagerAddress: '0x9d48D01dEccE2aa217B2EBE93F52cd7634f2d459',
+  v4StateView: '0x7D1D85561aF05E037EbbC4e7FC7D681F60dEd47D',
+  v4QuoterAddress: '0x1E4daDAFB1Cb2d7b4DCeb66774006ccFdA642C26',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -488,6 +518,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SONEIUM]: SONEIUM_ADDRESSES,
   [ChainId.MONAD]: MONAD_ADDRESSES,
   [ChainId.XLAYER]: XLAYER_ADDRESSES,
+  [ChainId.CYBER_TESTNET]: CYBER_TESTNET_ADDRESSES,
+  [ChainId.FLOW_TESTNET]: FLOW_TESTNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
